@@ -15,6 +15,7 @@ Installation
 -> Open terminal:
 git clone https://github.com/nicohs103/laravel-8-with-docker
 cd laravel-8-with-docker
+cp .env.example .env
 composer install
 ./vendor/bin/sail up
 
@@ -27,9 +28,12 @@ No password
 CREATE SCHEMA `databasename` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish2_ci;
 
 -> In the app container
+php artisan key:generate
 php artisan migrate --seed
 
 -> Navigate to localhost !!
+Admin user:
+admin - admin
 --------------------------------------------------
 
 This project make the containers for php server, mysql, redis, mailhog, meilisearch, selenium
