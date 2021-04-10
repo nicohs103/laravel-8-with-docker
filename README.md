@@ -30,6 +30,8 @@ CREATE SCHEMA `databasename` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish2_ci
 -> In the app container
 php artisan key:generate
 php artisan migrate --seed
+npm install
+npm run dev
 
 -> Navigate to localhost !!
 Admin user:
